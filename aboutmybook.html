@@ -1,21 +1,22 @@
 <html>
   <head>
     <style>
-      body {
-        background: #FFEBE0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-align: center
-      }
+      body { 
+  height: 200%;
+  background: #FFEBE0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
       #quote {
         background: #FFEBE0;
         box-shadow: 0px 0px 30px 45px #FFEBE0;
-        position: fixed;
-        bottom: 0;
-        padding-bottom: 20px;
+        
+        padding-bottom: 70px;
         width: 98vw;
         font-family: 'Times New Roman', Times, serif;
         height: 20px;
         font-size: small;
+        
       }
       
       #navbar {
@@ -35,21 +36,23 @@
 
       .right {
         position: absolute;
-        right: 1%;
-        top: 40px;
+        right: 30px;
+        padding-right: 1%;
+        padding-top: 40px;
         font-size: .8em;
       }
       .left {
         position: absolute;
-        left: 1%;
-        top: 30px;
+        padding-left: 1%;
+        padding-top: 30px;
+        
       }
       .logo {
         font-size: 1.2em;
       }
 
       img {
-        position:fixed; 
+        
         padding-left: 200px;
         padding-top:  30px;
         width:280px; 
@@ -60,43 +63,59 @@
       #title {
           font-family: cursive;
           font-size: x-large;
-          position: fixed;
-          bottom: 70;
-          left: 150px;
-          margin-left: 150px;
-          width: 300px;
-          padding-bottom: 550px;
+          text-align: center;
           font-weight: bold;
       }
 
-      #title2 {
+      .short-description {
           font-family:'Times New Roman', Times, serif;
           font-size: x-large;
-          position: fixed;
-          bottom: 50;
-          left: 150px;
-          padding-bottom: 530px;
+          padding: 0;
+          margin: 0;       
+          text-align: left;
       }
 
-      #description {
+      #title3 {
+          font-family: cursive;
+          font-size: x-large;
+         
+        
+          
+          margin-left: 150px;
+          width: 300px;
+          padding-bottom: 180px;
+          font-weight: bold;
+      }
+
+      #title4 {
+          font-family:'Times New Roman', Times, serif;
+          font-size: x-large;
+          
+        
+          
+          padding-bottom: 130px;
+      }
+
+  .book {
+    margin: 0 5%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 70px;
+  }
+
+  .book-description {
+    text-align: center;
+    width: 40%;
           font-family: 'Times New Roman', Times, serif;
           font-size: medium;
-          position: fixed;
-          bottom: 30;
-          left: 150px;
-          padding-bottom: 450px;
-          text-align: left;
+      }
+      .description {
+        text-align: left;
+        margin-bottom: 30px;
       }
       
-      #description2 {
-          font-family: 'Times New Roman', Times, serif;
-          font-size: medium;
-          position: fixed;
-          bottom: -10;
-          left: 150px;
-          padding-bottom: 400px;
-          text-align: left;
-      }
 
       .button {
   background-color: #E53;
@@ -104,10 +123,6 @@
   font-family: 'Times New Roman', Times, serif;
   font-size: medium;
   padding: 10px 40px; 
-  margin-top: 90px;
-  position: fixed;
-  bottom: 280px;
-  left: 150px;
   border: 2px solid #DDD;
   border-radius: 5px;
   box-shadow: 0px 10px 20px 5px #999;
@@ -124,21 +139,42 @@
   <body>
     <div id="navbar">
       <div class="left">
-        <a class="logo" href="index.html">Aneesha Writes</a>
+        <a class="logo" href="site.html">Aneesha Writes</a>
       </div>
       <div class="right">
         <a href="about.html">About</a>
-        <a href="aboutmybook.html">My First Book</a>
+        <a href="aboutmybook.html">My Published Books</a>
         <a href="contactme.html">Contact Me</a>
       </div>
     </div>
+    <div class="wrapper">
+      
+<div class="book">
+  <div class="book-description">      
+    <p id = "title">30 Love Poems for couples: </p>
+    <p class="short-description">The generous book filled with gracious poems about love couples</p>
+    <p class="description">This enchanting book is filled with 30, handwritten love poems made for couples who express love towards each other in a limitless way. These poems can always be used for special occasions such as anniversaries, Valentine's Day, or even casual days where you feel like going extra with love to your significant other. </p>
+    <p class="description">Adding on, this heart-warming book is definitely one every couple will enjoy with it's descriptive love tactics, heartfelt emotion, memorable imagery, and much more as you dive in a love phenomenon circle the moment you open the book and start reading. </p>
     <a class="button" href="https://www.amazon.com/30-Love-Poems-couples-generous-ebook/dp/B09NP8X8Y6/ref=sr_1_2?crid=11N5L1GKRKMB1&keywords=aneesha+nayak&qid=1639954009&sprefix=Aneesha%2Caps%2C177&sr=8-2" target="_blank">Purchase Link</a>
-    <div id = "description">This enchanting book is filled with 30, handwritten love poems made for <br>couples who express love towards each other in a limitless way. These poems can always be used for special <br>occasions such as anniversaries, Valentine's Day, or even casual days where you feel like<br> going extra with love to your significant other. </div>
-    <div id = "description2">Adding on, this heart-warming book is definitely one every couple will <br>enjoy with it's descriptive love tactics, heartfelt emotion, memorable imagery, and much more <br>as you dive in a love phenomenon circle the moment you open the book and start reading. </div>
-    <div id = "title">30 Love Poems for couples: </div>
-    <div id = "title2">The generous book filled with gracious poems about love couples.</div>
-    <img src="poetrybooklogo.png" alt="poetry book">
-    <div id = "quote">“We know what we are, but know not what we may be.” - William Shakespeare</div>
+  </div>
+  <img src="poetrybooklogo.png" alt="poetry book">
+
+</div>
+
+<div class="book">
+  <div class="book-description">      
+    <p id = "title">30 Self-Care Writing Prompts: </p>
+    <p class="short-description">A wonderful, interactive book filled with 30 calming writing prompts you can use during your me time</p>
+    <p class="description">Are you into writing during your me-time as you implement some self-care and personal durations in your day? If so, this book is perfect for you as you engage yourself in a journey full of various writing prompts that will allow your creativity to go wild!</p>
+    <p class="description">This wonder-filled, interactive book full of 30 writing prompts is a great resource for you whenever you apply self-care in your day and feel like discovering ideas due to the many prompts provided in this book. May this allow you to discover new ideas, enhance creativity, and most of all, have fun!</p>
+    <a class="button" href="https://www.amazon.com/dp/B09PMKC14H" target="_blank">Purchase Link</a>
+  </div>
+  <img src="Untitled design-3.png" alt="prompt book">
+
+</div>
+      <div id = "quote">“We know what we are, but know not what we may be.” - William Shakespeare</div>
+    </div>
+
   </body>
 </html>
 
