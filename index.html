@@ -1,0 +1,305 @@
+<html>
+<meta charset="UTF-8">
+
+  <head>
+    <style>
+      body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+:root {
+  --logo-height: 0px;
+}
+
+.top {
+  height: var(--logo-height);
+}
+
+.wrapper {
+  height: calc(0% - var(--logo-height));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+
+.mobile-container {  
+  max-width: 780px;  
+  margin: auto;  
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);  
+  animation: gradient 15s ease infinite;  
+  height: 700px;  
+  color: white;  
+  border-radius: 10px;  
+  border-style: outset;
+  /* add this 
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+ 
+.square {   
+    height: 650px;
+    width: 650px;
+    background-color: #ffffff; 
+    border-style: outset;
+    position: absolute;
+    top: 43%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+
+ 
+
+
+
+.topnav #myLinks {
+  display: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.topnav a.icon {
+  float: right;
+}
+
+.butterfly {
+  position: relative;
+  top: -70px;
+  right: 330px;
+  z-index: 1;
+}
+
+.active {
+  background-color: #b750e7;
+  color: rgb(122, 115, 17);
+}
+
+.right {
+      position: absolute;
+      right: 40px;
+      padding-right: 90%;
+      top: 15px;
+      font-size: 1.5em;
+      font-family: monospace;
+      z-index: 2;
+      color: black;
+      }
+
+.img1 {
+        
+        left: 350px;
+        position: absolute;
+        top: 10px;
+        width:180px; 
+        height:150px; 
+        border:none;
+        z-index: 1;
+      }      
+
+
+ .short-description1 {
+        font-family:fantasy;
+        font-size: large;     
+        text-align: left;
+        position: absolute;
+        left: 475px;
+        top: 210px;
+        z-index: 1;
+        color: #e73c7e;
+      }
+
+
+      .short-description2 {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: medium;     
+        text-align: left;
+        position: absolute;
+        left: 415px;
+        top: 290px;
+        z-index: 1;
+      }
+
+      .short-description3 {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: medium;     
+        text-align: left;
+        position: absolute;
+        left: 415px;
+        top: 350px;
+        z-index: 1;
+      }
+
+      .short-description4 {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: medium;     
+        text-align: left;
+        position: absolute;
+        left: 415px;
+        top: 410px;
+        z-index: 1;
+      }
+
+      .short-description5 {
+        font-family:fantasy;
+        font-size: medium;     
+        text-align: left;
+        position: absolute;
+        left: 465px;
+        top: 490px;
+        z-index: 1;
+        color: #b750e7;
+      }
+
+
+
+.typewriter h1 {
+  color: rgb(20, 170, 170);
+  font-family: monospace;
+  overflow: hidden; 
+  white-space: nowrap; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+  position: absolute;
+  left: 650px;
+  top: 100px;
+}
+
+.typewriter h2 {
+  color: rgb(20, 170, 170);
+  font-family: monospace;
+  overflow: hidden; 
+  white-space: nowrap; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+  position: absolute;
+  left: 650px;
+
+}
+
+.img2 {
+        
+        left: 900px;
+        position: absolute;
+        top: 530px;
+        width:180px; 
+        height:150px; 
+        border:none;
+        z-index: 1;
+      }    
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="mobile-container">
+
+
+
+<div style="padding-left:16px">
+
+
+
+</div>
+
+</div>
+
+<!-- this is the div with the gradient background -->
+<div class="gradient-div">
+    <!-- this is for the "logo" and green bar -->
+    <div class="top">
+      <div class="logo"></div>
+      <div class="green-bar"></div>
+    </div>
+    <div class="wrapper">
+     <div class="square"></div>
+      <img src="200.gif" class="butterfly">
+      <div class="right">
+        <a href="myproject.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="justforfun.html">Fun!</a>
+    <div class="typewriter">
+      <h2>Hi! It's</h2>
+      <h1>Aneesha!!!</h1>
+    </div>
+    </div>
+    <img src="emji.png" class="img1">
+
+    <p class="short-description1">&#127800; Welcome to my world! &#127800;</p>
+    <p class="short-description2">&#127804; <b>about me </b>- I am a current college student studying computer science <br> and possibly minoring in math.</p>
+    <p class="short-description3">&#127801; <b>interests </b>- My interests inlclude HTML/CSS, JavaScript, and Python coding, <br> web development, and software developing.</p>
+    <p class="short-description4">&#127802; <b>hobbies </b>- My hobbies are swimming, poetry, painting, going on walks, <br> reading, and collecting squishmallows!</p>
+
+    <p class="short-description5">&#127803; Today is your opportunity to build the tomorrow you want. &#127803; <br> - Ken Poirot </p>
+    <img src="alcohol.png" class="img2"> 
+  </div>
+
+   
+  </body>
+   
+  </html>  
+  </style>
+  </head>
+  <body> 
+    
+    
+  </body>
+</html>
+
+
+
