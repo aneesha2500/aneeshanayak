@@ -1,0 +1,315 @@
+<html>
+<meta charset="UTF-8">
+
+  <head>
+    <style>
+      body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+:root {
+  --logo-height: 0px;
+}
+
+.top {
+  height: var(--logo-height);
+}
+
+.wrapper {
+  height: calc(0% - var(--logo-height));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+
+.mobile-container {  
+  max-width: 780px;  
+  margin: auto;  
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);  
+  animation: gradient 15s ease infinite;  
+  height: 700px;  
+  color: white;  
+  border-radius: 10px;  
+  border-style: outset;
+  /* add this 
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+ 
+.square {   
+    height: 650px;
+    width: 650px;
+    background-color: #ffffff; 
+    border-style: outset;
+    position: absolute;
+    top: 43%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+
+ 
+
+
+
+.topnav #myLinks {
+  display: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.topnav a.icon {
+  float: right;
+}
+
+.butterfly {
+  position: relative;
+  top: -70px;
+  right: 330px;
+  z-index: 1;
+}
+
+.active {
+  background-color: #b750e7;
+  color: rgb(122, 115, 17);
+}
+
+.right {
+      position: absolute;
+      right: 40px;
+      padding-right: 90%;
+      top: 15px;
+      font-size: 1.5em;
+      font-family: monospace;
+      z-index: 2;
+      color: black;
+      }
+
+      .typewriter h1{
+  color: rgb(116, 44, 12);
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+  position: absolute;
+  left: 520px;
+  top: 20px;
+
+}
+
+.short-description {
+        font-family:'Courier New', Courier, monospace;
+        font-size: large;     
+        text-align: center;
+        position: absolute;
+        left: 460px;
+        top: 90px;
+      }
+
+      .img1 {
+        
+        left: 900px;
+        position: absolute;
+        top: 530px;
+        width:180px; 
+        height:150px; 
+        border:none;
+        z-index: 1;
+      }    
+
+      .short-description1 {
+        font-family:'Times New Roman', Times, serif;
+        font-size: large;     
+        text-align: center;
+        position: absolute;
+        left: 430px;
+        top: 160px;
+      }
+
+      .short-description2 {
+        font-family:'Times New Roman', Times, serif;
+        font-size: medium;     
+        text-align: left;
+        position: absolute;
+        left: 430px;
+        top: 190px;
+      }
+
+      .short-description3{
+        font-family:'Times New Roman', Times, serif;
+        font-size: large;     
+        text-align: center;
+        position: absolute;
+        left: 722px;
+        top: 290px;
+      }
+
+      .short-description4{
+        font-family:'Times New Roman', Times, serif;
+        font-size: medium;     
+        text-align: left;
+        position: absolute;
+        left: 722px;
+        top: 320px;
+      }
+
+      .short-description5 {
+        font-family:'Times New Roman', Times, serif;
+        font-size: large;     
+        text-align: center;
+        position: absolute;
+        left: 430px;
+        top: 420px;
+      }
+
+      .short-description6{
+        font-family:'Times New Roman', Times, serif;
+        font-size: medium;     
+        text-align: left;
+        position: absolute;
+        left: 430px;
+        top: 450px;
+      }
+
+      .tenor-gif-embed{
+        position: absolute;
+        left: 490px;
+        top: 130px;
+        width: 400px;
+        height:300px;
+      }
+
+      .img3 {
+        
+        left: 790px;
+        position: absolute;
+        top: 150px;
+        width:175px; 
+        height:155px; 
+        border:none;
+        z-index: 1;
+      }    
+     
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="mobile-container">
+
+
+
+<div style="padding-left:16px">
+
+
+
+</div>
+
+</div>
+
+<!-- this is the div with the gradient background -->
+<div class="gradient-div">
+    <!-- this is for the "logo" and green bar -->
+    <div class="top">
+      <div class="logo"></div>
+      <div class="green-bar"></div>
+    </div>
+    <div class="wrapper">
+     <div class="square"></div>
+      <img src="200.gif" class="butterfly">
+      <div class="right">
+        <a href="myproject.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="justforfun.html">Fun!</a>
+        <div class="typewriter">
+            <h1>Just for fun!</h1>
+
+    <p class="short-description">&#128152; Here are some facts about me just for fun! &#128152;</p>
+    <p class="short-description1"> <b><u>Food</u></b></p>
+    <p class="short-description2"> &#10002;<b> Favorite: </b> Chipotle &#129369;<br> &#10002; <b> Least favorite: </b> Avocados &#129361;<br> &#10002; <b>Weirdest food I like: </b>Parmesean cheese off <br> a spoon! &#129472;</p>
+
+    <p class="short-description3"> <b><u>Activities</u></b></p>
+    <p class="short-description4"> &#10002;<b> Favorite coding activity: </b> Coding websites! &#128187;<br> &#10002; <b> Favorite sport: </b> Swimming &#127946;<br> &#10002; <b>Free time favorite: </b>Writing Poems &#9997;</p>
+
+    <p class="short-description5"> <b><u>Music</u></b></p>
+    <p class="short-description6"> &#10002;<b> Favorite current song: </b> Message in a bottle <br> by Taylor Swift &#127925;<br> &#10002; <b> Favorite artists: </b> Bruno Mars, Andy Grammer,<br> Alessia Cara, and Ed Sheeran. &#127908;<br> &#10002; <b>Favorite bands: </b>OneRepublic and Coldplay &#129345;</p>
+    <img src="sing.png" class="img1"> 
+
+    <div class="tenor-gif-embed" data-postid="19646198" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/kiki-kikiapp-kikicat-swimming-just-keep-swimming-gif-19646198">Kiki Kikiapp Sticker</a>from <a href="https://tenor.com/search/kiki-stickers"></a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    <img src="tacolk.jpg" class="img3"> 
+    </div>
+    </div>
+    
+  </div>
+
+   
+  </body>
+   
+  </html>  
+  </style>
+  </head>
+  <body> 
+    
+    
+  </body>
+</html>
+
+
+
